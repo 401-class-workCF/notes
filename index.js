@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+//Above line is used so you don't have to write "node filename.js" every time
+
 'use strict';
 
 // requires this file to look at input.js and notes.js in the lib folder
