@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Command-line (Terminal-based) note taking app.",
+  "main": "notes.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-class-workCF/notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-class-workCF/notes/issues"
+  },
+  "homepage": "https://github.com/401-class-workCF/notes#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
