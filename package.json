@@ -2,7 +2,7 @@
   "name": "notes",
   "version": "1.0.0",
   "description": "Command-line (Terminal-based) note taking app.",
-  "main": "notes.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -27,6 +27,12 @@
   },
   "homepage": "https://github.com/401-class-workCF/notes#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "@code-fellows/supergoose": "^1.0.2",
+    "faker": "^4.1.0",
+    "jest": "^26.4.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.0",
+    "superagent": "^6.0.0",
+    "uuid": "^8.3.0"
   }
 }

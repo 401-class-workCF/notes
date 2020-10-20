@@ -1,14 +1,51 @@
-#!/usr/bin/env node
-//Above line is used so you don't have to write "node filename.js" every time
-
 'use strict';
 
-// requires this file to look at input.js and notes.js in the lib folder
-const Input = require('./lib/input.js');
-const notes = require('./lib/notes.js');
+const Input = require('./lib/input');
 
-// Make new object from the constructor in input.js (Keys)
-const option = new Input();
+Input();
 
-// Gets Values from notes.js
-notes.fetch(option);
+// console.log('working', Input);
+
+// 'use strict';
+
+
+// function Input() {
+
+// }
+
+// Input.prototype.add = function (body='No note added.') {
+  
+// }
+
+
+
+
+
+// #!/usr/bin/env node
+// 'use strict';
+
+// const mongoose = require('mongoose');
+
+// mongoose.connect('mongodb://localhost:27017/notesy', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+
+// const Input = require('./lib/input.js');
+// const Notes = require('./lib/notes.js');
+
+// const input = new Input();
+// const notes = new Notes();
+
+// if (input.valid()) {
+//   notes.execute(input.command)
+//     .then(mongoose.disconnect)
+//     .catch(error => console.error(error));
+// } else {
+//   help();
+// }
+
+// function help() {
+//   console.error('Error!');
+//   process.exit();
+// }
