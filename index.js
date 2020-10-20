@@ -2,7 +2,7 @@
 
 const Input = require('./lib/input');
 
-Input();
+new Input();
 
 // console.log('working', Input);
 
