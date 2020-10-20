@@ -1,25 +1,35 @@
+#!/usr/bin/env node
 'use strict';
 
-const Input = require('./lib/input');
+const mongoose = require('mongoose');
 
-new Input();
+const Input = require('./lib/input');
+const Notes = require('./lib/notes');
+
+const input = new Input();
+const notes = new Notes(input);
+
+if ((input.validate())) {
+  notes
+    .execute(input.command)
+    .then(mongoose.disconnect)
+    .catch((err) => console.log(err));
+} else {
+  console.log('Error');
+  process.exit();
+}
 
 // console.log('working', Input);
 
 // 'use strict';
-
 
 // function Input() {
 
 // }
 
 // Input.prototype.add = function (body='No note added.') {
-  
+
 // }
-
-
-
-
 
 // #!/usr/bin/env node
 // 'use strict';
